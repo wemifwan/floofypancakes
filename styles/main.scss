@@ -44,9 +44,10 @@ body{
     min-height: 100vh;
     overflow-y: scroll;
     background-image: url(https://i.imgur.com/rumkPcr.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1 {
         font-family: 'Prompt', sans-serif;
         font-size: 6em;
@@ -69,7 +70,6 @@ body{
 }
 
 .about {
-    display: flex;
     padding-top: 30px;
     margin-top: -8px;
     margin-bottom: 8px;
@@ -77,10 +77,11 @@ body{
     height: auto;
     background-color: #b3aead;
     background-image: url(https://i.imgur.com/dyV8XGX.png);
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .bodytext {
-        font-size: 16px;
         h1 {
             color: rgb(255, 255, 255);
             font-family: 'Prompt', sans-serif;
