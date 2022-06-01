@@ -48,12 +48,16 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     h1 {
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-family: 'Prompt', sans-serif;
         font-size: 6em;
         text-align: center;
         text-transform: uppercase;
         text-shadow: 5px 3px 5px #696969;
-        margin:auto 0;
+        
         .light {
             color: white;
             font-weight: 200;
