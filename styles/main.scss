@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
+    
 }
 .navbar {
     background-color: rgb(48, 48, 48);
@@ -68,6 +68,7 @@ body{
 }
 
 .about {
+    display: flex;
     padding-top: 30px;
     margin-top: -8px;
     margin-bottom: 8px;
