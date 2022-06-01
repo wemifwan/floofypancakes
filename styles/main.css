@@ -45,10 +45,11 @@ body, html {
 }
 
 .home {
+  display: block;
   padding-top: 30px;
   margin-top: -8px;
-  height: 100vh;
   min-height: 100vh;
+  height: 100vh;
   background-image: url(https://i.imgur.com/rumkPcr.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -80,11 +81,11 @@ body, html {
 }
 
 .about {
+  display: block;
   padding-top: 30px;
   margin-top: -8px;
-  margin-bottom: 8px;
   min-height: 100vh;
-  height: auto;
+  height: 100vh;
   background-color: #b3aead;
   background-image: url(https://i.imgur.com/dyV8XGX.png);
   background-attachment: fixed;
@@ -115,6 +116,7 @@ body, html {
 }
 
 .members {
+  display: block;
   background-color: #ffc55b;
   position: relative;
   padding-top: 30px;
