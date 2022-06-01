@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&family=Short+Stack&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: rgb(48, 48, 48);
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar ul {
+  list-style-type: none;
+  margin-top: 15px;
+  text-align: center;
+  background-color: rgb(48, 48, 48);
+}
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navbar li a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-bottom: 3px solid transparent;
+}
+.navbar li a:hover {
+  color: rgb(255, 228, 26);
+  border-bottom: 3px solid rgb(255, 228, 26);
+}
+
+.home {
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  margin-top: -8px;
+  height: 100vh;
+  background-image: url(/styles/images/endwalkerendtest.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 16px;
+}
+.home h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  text-shadow: 3px 5px #000000;
+}
+.home h1 .light {
+  font-weight: lighter;
+  color: white;
+}
+.home h1 .bold {
+  color: rgb(255, 255, 125);
+  font-weight: bold;
+}
+
+.about {
+  padding-top: 30px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  min-height: 100vh;
+  height: auto;
+  text-align: right;
+  background-color: #b3aead;
+  background-image: url(/styles/images/freecompany.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.about .bodytext {
+  font-size: 16px;
+}
+.about .bodytext h1 {
+  font-weight: bold;
+  color: rgb(255, 255, 125);
+  font-size: 6em;
+  text-shadow: 3px 5px #000000;
+  margin-top: 5%;
+  margin-right: 15%;
+}
+.about .bodytext p {
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 65%;
+}
+
+.members {
+  position: relative;
+  font-size: 16px;
+  padding-top: 30px;
+  margin-top: -8px;
+  height: auto;
+  background-color: rgb(255, 197, 91);
+  font-family: "Lato", sans-serif;
+}
+.members .wrapper {
+  margin-top: 3%;
+}
+.members .wrapper h1 {
+  text-align: center;
+  font-size: 6em;
+  font-family: "Short Stack", cursive;
+  margin-bottom: 1em;
+}
+.members .wrapper .fc {
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.members .wrapper .fc .member {
+  background-color: #fff;
+  margin: 5em;
+  margin-bottom: 3em;
+  width: 30em;
+  padding: 2em;
+  line-height: 2em;
+  position: relative;
+}
+.members .wrapper .fc .member h3 {
+  color: rgb(255, 197, 91);
+  font-size: 2em;
+  margin-top: 3.5em;
+}
+.members .wrapper .fc .member .rank {
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+.members .wrapper .fc .member .profilephoto {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  position: absolute;
+  top: -6em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(255, 255, 255);
+}
+.members .wrapper .fc .member .profilephoto img {
+  width: 12em;
+  height: 12em;
+  margin-top: 1em;
+  padding: 0.4em;
+}
+
+.discord {
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  padding-top: 30px;
+  margin-top: -8px;
+  height: 100vh;
+  background-color: rgb(252, 255, 60);
+}
+.discord h1 {
+  padding: 2em;
+  font-size: 3em;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
