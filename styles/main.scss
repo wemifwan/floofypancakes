@@ -33,24 +33,15 @@
         border-bottom: 3px solid rgb(255, 228, 26);
     }
 }
-.justify-content-center {
-    justify-content: center !important;
-  }
-.flex-column {
-    flex-direction: column !important;
-}
-.d-flex {
-    display: flex !important;
-}
 .home {
     position: relative;
     padding-top: 30px;
     margin-top: -8px;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
     background-image: url(https://i.imgur.com/rumkPcr.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     h1 {
         font-family: 'Prompt', sans-serif;

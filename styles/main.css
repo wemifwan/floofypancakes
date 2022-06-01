@@ -40,34 +40,15 @@
   border-bottom: 3px solid #ffe41a;
 }
 
-.justify-content-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-}
-
-.flex-column {
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-}
-
-.d-flex {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
 .home {
   position: relative;
   padding-top: 30px;
   margin-top: -8px;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: scroll;
   background-image: url(https://i.imgur.com/rumkPcr.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
 }
 
