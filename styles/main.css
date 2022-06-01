@@ -58,15 +58,19 @@ body, html {
 }
 
 .home h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'Prompt', sans-serif;
   font-size: 6em;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 5%;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-shadow: 5px 3px 5px #696969;
 }
 

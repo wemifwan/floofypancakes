@@ -48,14 +48,13 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Prompt', sans-serif;
         font-size: 6em;
         text-align: center;
         text-transform: uppercase;
-        margin-top: 5%;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-shadow: 5px 3px 5px #696969;
         .light {
             color: white;
