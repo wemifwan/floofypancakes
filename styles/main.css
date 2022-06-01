@@ -84,6 +84,7 @@ body, html {
   display: block;
   padding-top: 30px;
   margin-top: -8px;
+  margin-bottom: 8px;
   min-height: 100vh;
   height: 100vh;
   background-color: #b3aead;
@@ -121,6 +122,7 @@ body, html {
   position: relative;
   padding-top: 30px;
   margin-top: -8px;
+  margin-bottom: 8px;
   height: auto;
 }
 
