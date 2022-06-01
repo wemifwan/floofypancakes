@@ -63,8 +63,8 @@ body, html {
   font-size: 6em;
   text-align: center;
   text-transform: uppercase;
-  top: 40%;
-  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-shadow: 5px 3px 5px #696969;
 }
 
