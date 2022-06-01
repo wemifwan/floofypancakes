@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&family=Short+Stack&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Lato&family=Roboto&family=Short+Stack&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .navbar {
+  font-family: "Roboto", sans-serif;
   background-color: rgb(48, 48, 48);
   width: 100%;
   height: 50px;
