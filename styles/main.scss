@@ -37,6 +37,9 @@ body, html {
     }
 }
 .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 30px;
     margin-top: -8px;
     margin-bottom: 8px;
@@ -48,10 +51,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     h1 {
-        display: -webkit-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-family: 'Prompt', sans-serif;
         font-size: 6em;
         text-align: center;
