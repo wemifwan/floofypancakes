@@ -1,14 +1,8 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Lato&family=Roboto&family=Short+Stack&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&&family=Ubuntu&family=Lato&family=Roboto&family=Short+Stack&display=swap");
 * {
     box-sizing: border-box;
 }
-
-body {
-    font-family: "Ubuntu", sans-serif;
-}
-
 .navbar {
-    font-family: "Roboto", sans-serif;
     background-color: rgb(48, 48, 48);
     width: 100%;
     height: 50px;
@@ -16,10 +10,10 @@ body {
     top: 0;
     z-index: 1;
     ul {
+        background-color: rgb(48, 48, 48);
+        text-align: center;
         list-style-type: none;
         margin-top: 15px;
-        text-align: center;
-        background-color: rgb(48, 48, 48);
     }
     li {
         display: inline-block;
@@ -27,7 +21,7 @@ body {
     }
     li a {
         color: rgb(255, 255, 255);
-        text-align: center;
+        font-family: "Roboto", sans-serif;
         text-decoration: none;
         text-transform: uppercase;
         margin: 10px 10px;
@@ -41,7 +35,6 @@ body {
 }
 
 .home {
-    text-align: center;
     position: relative;
     padding-top: 30px;
     margin-top: -8px;
@@ -49,51 +42,55 @@ body {
     background-image: url(https://i.imgur.com/rumkPcr.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    font-size: 16px;
     h1 {
+        font-family: 'Prompt', sans-serif;
+        font-size: 6em;
+        text-align: center;
+        text-transform: uppercase;
         position: absolute;
         top: 40%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        font-size: 6em;
-        text-shadow: 3px 5px #000000;
+        text-shadow: 5px 3px #696969;
         .light {
-            font-weight: lighter;
             color: white;
+  font-weight: 200;
         }
         .bold {
             color: rgb(255, 255, 125);
-            font-weight: bold;
+  font-weight: 500;
         }
     }
 }
 
 .about {
+    display: flex;
     padding-top: 30px;
     margin-top: -8px;
     margin-bottom: 8px;
     min-height: 100vh;
     height: auto;
-    text-align: right;
     background-color: #b3aead;
     background-image: url(https://i.imgur.com/dyV8XGX.png);
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
     .bodytext {
         font-size: 16px;
         h1 {
-            font-weight: bold;
-            color: rgb(255, 255, 125);
+            color: rgb(255, 255, 255);
+            font-family: 'Prompt', sans-serif;
+            font-weight: 200;
             font-size: 6em;
-            text-shadow: 3px 5px #000000;
+            text-align: right;
+            text-transform: uppercase;
+            text-shadow: 5px 5px #696969;
             margin-top: 5%;
             margin-right: 15%;
         }
         p {
-            font-weight: lighter;
+            font-family: "Ubuntu", sans-serif;
             font-size: 1.5em;
+            text-align: right;
             padding-top: 5%;
             padding-left: 5%;
             padding-right: 65%;
@@ -102,24 +99,28 @@ body {
 }
 
 .members {
+    background-color: rgb(255, 197, 91);
     position: relative;
-    font-size: 16px;
     padding-top: 30px;
     margin-top: -8px;
     height: auto;
-    background-color: rgb(255, 197, 91);
-    font-family: "Lato", sans-serif;
     .wrapper {
         margin-top: 3%;
         h1 {
-            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: 'Prompt', sans-serif;
+            font-weight: 200;
             font-size: 6em;
-            font-family: "Short Stack", cursive;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 5px 5px #696969;
             margin-bottom: 1em;
         }
         .fc {
             display: flex;
+            font-family: "Lato", sans-serif;
             text-align: center;
+            text-transform: uppercase;
             width: auto;
             justify-content: center;
             flex-wrap: wrap;
