@@ -76,6 +76,7 @@
 }
 
 .about {
+  display: block;
   padding-top: 30px;
   margin-top: -8px;
   margin-bottom: 8px;
