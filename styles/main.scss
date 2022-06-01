@@ -33,7 +33,15 @@
         border-bottom: 3px solid rgb(255, 228, 26);
     }
 }
-
+.justify-content-center {
+    justify-content: center !important;
+  }
+  .flex-column {
+    flex-direction: column !important;
+  }
+  .d-flex {
+    display: flex !important;
+  }
 .home {
     position: relative;
     padding-top: 30px;
@@ -51,7 +59,7 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-shadow: 5px 3px #696969;
+        text-shadow: 5px 3px 5px #696969;
         .light {
             color: white;
   font-weight: 200;
@@ -83,7 +91,7 @@
             font-size: 6em;
             text-align: right;
             text-transform: uppercase;
-            text-shadow: 5px 5px #696969;
+            text-shadow: 5px 3px 5px #696969;
             margin-top: 5%;
             margin-right: 15%;
         }
@@ -113,7 +121,7 @@
             font-size: 6em;
             text-align: center;
             text-transform: uppercase;
-            text-shadow: 5px 5px #696969;
+            text-shadow: 5px 3px 5px #696969;
             margin-bottom: 1em;
         }
         .fc {

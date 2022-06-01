@@ -1,27 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&&family=Ubuntu&family=Lato&family=Roboto&family=Short+Stack&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .navbar {
-  background-color: rgb(48, 48, 48);
+  background-color: #303030;
   width: 100%;
   height: 50px;
   position: fixed;
   top: 0;
   z-index: 1;
 }
+
 .navbar ul {
-  background-color: rgb(48, 48, 48);
+  background-color: #303030;
   text-align: center;
   list-style-type: none;
   margin-top: 15px;
 }
+
 .navbar li {
   display: inline-block;
   margin: 0 10px;
 }
+
 .navbar li a {
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -29,9 +34,29 @@
   padding: 10px 10px;
   border-bottom: 3px solid transparent;
 }
+
 .navbar li a:hover {
-  color: rgb(255, 228, 26);
-  border-bottom: 3px solid rgb(255, 228, 26);
+  color: #ffe41a;
+  border-bottom: 3px solid #ffe41a;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .home {
@@ -43,6 +68,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .home h1 {
   font-family: 'Prompt', sans-serif;
   font-size: 6em;
@@ -51,19 +77,24 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 5px 3px #696969;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-shadow: 5px 3px 5px #696969;
 }
+
 .home h1 .light {
   color: white;
   font-weight: 200;
 }
+
 .home h1 .bold {
-  color: rgb(255, 255, 125);
+  color: #ffff7d;
   font-weight: 500;
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
   margin-top: -8px;
@@ -76,17 +107,22 @@
   background-position: center;
 }
 
+.about .bodytext {
+  font-size: 16px;
+}
+
 .about .bodytext h1 {
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: 'Prompt', sans-serif;
   font-weight: 200;
   font-size: 6em;
   text-align: right;
   text-transform: uppercase;
-  text-shadow: 5px 5px #696969;
+  text-shadow: 5px 3px 5px #696969;
   margin-top: 5%;
   margin-right: 15%;
 }
+
 .about .bodytext p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5em;
@@ -95,36 +131,45 @@
   padding-left: 5%;
   padding-right: 65%;
 }
+
 .members {
-  background-color: rgb(255, 197, 91);
+  background-color: #ffc55b;
   position: relative;
   padding-top: 30px;
   margin-top: -8px;
   height: auto;
-  
 }
+
 .members .wrapper {
   margin-top: 3%;
 }
+
 .members .wrapper h1 {
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: 'Prompt', sans-serif;
   font-weight: 200;
   font-size: 6em;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 5px 5px #696969;
+  text-shadow: 5px 3px 5px #696969;
   margin-bottom: 1em;
 }
+
 .members .wrapper .fc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Lato", sans-serif;
   text-align: center;
   text-transform: uppercase;
   width: auto;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .members .wrapper .fc .member {
   background-color: #fff;
   margin: 5em;
@@ -134,17 +179,20 @@
   line-height: 2em;
   position: relative;
 }
+
 .members .wrapper .fc .member h3 {
-  color: rgb(255, 197, 91);
+  color: #ffc55b;
   font-size: 2em;
   margin-top: 3.5em;
 }
+
 .members .wrapper .fc .member .rank {
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 0.8em;
   text-transform: uppercase;
   margin: 1em 0;
 }
+
 .members .wrapper .fc .member .profilephoto {
   width: 15em;
   height: 15em;
@@ -152,9 +200,11 @@
   position: absolute;
   top: -6em;
   left: 50%;
-  transform: translateX(-50%);
-  background: rgb(255, 255, 255);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: white;
 }
+
 .members .wrapper .fc .member .profilephoto img {
   width: 12em;
   height: 12em;
@@ -169,10 +219,12 @@
   padding-top: 30px;
   margin-top: -8px;
   height: 100vh;
-  background-color: rgb(252, 255, 60);
+  background-color: #fcff3c;
 }
+
 .discord h1 {
   padding: 2em;
   font-size: 3em;
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
