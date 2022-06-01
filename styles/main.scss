@@ -37,7 +37,6 @@ body, html {
     }
 }
 .home {
-    position: absolute;
     padding-top: 30px;
     margin-top: -8px;
     margin-bottom: 8px;
@@ -53,6 +52,7 @@ body, html {
         font-size: 6em;
         text-align: center;
         text-transform: uppercase;
+        margin-top: 5%;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -69,7 +69,6 @@ body, html {
 }
 
 .about {
-    position: absolute;
     padding-top: 30px;
     margin-top: -8px;
     margin-bottom: 8px;
