@@ -71,6 +71,7 @@
     margin-bottom: 8px;
     min-height: 100vh;
     height: auto;
+    overflow-y: scroll;
     background-color: #b3aead;
     background-image: url(https://i.imgur.com/dyV8XGX.png);
     background-repeat: no-repeat;
@@ -95,6 +96,7 @@
             padding-top: 5%;
             padding-left: 5%;
             padding-right: 65%;
+            margin-bottom: 5%;
         }
     }
 }
