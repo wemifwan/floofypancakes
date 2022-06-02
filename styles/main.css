@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&&family=Ubuntu&family=Lato&family=Roboto&family=Short+Stack&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -13,27 +12,24 @@ html {
 }
 
 .navbar {
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
   width: 100%;
   height: 3.4rem;
   position: fixed;
   top: 0;
   z-index: 9999;
 }
-
 .navbar ul {
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
   text-align: center;
   list-style-type: none;
 }
-
 .navbar li {
   display: inline-block;
   margin: 0 10px;
 }
-
 .navbar li a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -41,10 +37,9 @@ html {
   padding: 10px 10px;
   border-bottom: 3px solid transparent;
 }
-
 .navbar li a:hover {
-  color: #ffe41a;
-  border-bottom: 3px solid #ffe41a;
+  color: rgb(255, 228, 26);
+  border-bottom: 3px solid rgb(255, 228, 26);
 }
 
 .parallax {
@@ -59,29 +54,20 @@ html {
     background-attachment: scroll;
   }
 }
-
 .home {
   padding-top: 3.4rem;
   min-height: 100vh;
   height: auto;
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
   background-image: url(https://i.imgur.com/rumkPcr.jpg);
 }
-
 .home .welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   height: auto;
 }
-
 .home .welcome h1 {
   margin-bottom: 3.5rem;
   font-family: "Prompt", sans-serif;
@@ -90,53 +76,44 @@ html {
   text-transform: uppercase;
   text-shadow: 5px 3px 5px #696969;
 }
-
 .home .welcome h1 .light {
   color: white;
   font-weight: 200;
 }
-
 .home .welcome h1 .bold {
-  color: #ffff7d;
+  color: rgb(255, 255, 125);
   font-weight: 500;
 }
-
 .home .welcome h1 .learn-more {
   padding: 0.8em 1.8em;
-  border: 2px solid #ffe41a;
+  border: 2px solid rgb(255, 228, 26);
   position: relative;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: #ffe41a;
+  color: rgb(255, 228, 26);
 }
-
 .home .welcome h1 .learn-more::before {
-  content: '';
+  content: "";
   width: 0;
   height: 300%;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-  background: #ffe41a;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: rgb(255, 228, 26);
+  transition: 0.5s ease;
   display: block;
   z-index: -1;
 }
-
 .home .welcome h1 .learn-more:hover::before {
   width: 105%;
 }
-
 .home .welcome h1 .learn-more:hover {
   color: #111;
   cursor: pointer;
@@ -146,12 +123,11 @@ html {
   padding-top: 3.4rem;
   min-height: 100vh;
   height: auto;
-  background-color: #636363;
+  background-color: rgb(99, 99, 99);
   background-image: url(https://i.imgur.com/dyV8XGX.png);
 }
-
 .about .bodytext h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Prompt", sans-serif;
   font-weight: 200;
   font-size: 3rem;
@@ -160,7 +136,6 @@ html {
   text-shadow: 5px 3px 5px #696969;
   margin-right: 15%;
 }
-
 .about .bodytext p {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
@@ -176,15 +151,13 @@ html {
   padding-top: 3.4rem;
   margin-bottom: 8px;
   height: auto;
-  background-color: #ffc55b;
+  background-color: rgb(255, 197, 91);
 }
-
 .members .wrapper {
   margin-top: 3%;
 }
-
 .members .wrapper h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Prompt", sans-serif;
   font-weight: 200;
   font-size: 3rem;
@@ -193,22 +166,15 @@ html {
   text-shadow: 5px 3px 5px #696969;
   margin-bottom: 1em;
 }
-
 .members .wrapper .fc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: "Lato", sans-serif;
   text-align: center;
   text-transform: uppercase;
   width: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .members .wrapper .fc .member {
   background-color: #fff;
   margin: 5em;
@@ -218,20 +184,17 @@ html {
   line-height: 2em;
   position: relative;
 }
-
 .members .wrapper .fc .member h3 {
-  color: #ffc55b;
+  color: rgb(255, 197, 91);
   font-size: 2rem;
   margin-top: 3.5em;
 }
-
 .members .wrapper .fc .member .rank {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 0.8rem;
   text-transform: uppercase;
   margin: 1em 0;
 }
-
 .members .wrapper .fc .member .profilephoto {
   width: 15em;
   height: 15em;
@@ -239,11 +202,9 @@ html {
   position: absolute;
   top: -6em;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: white;
+  transform: translateX(-50%);
+  background: rgb(255, 255, 255);
 }
-
 .members .wrapper .fc .member .profilephoto img {
   width: 12em;
   height: 12em;
@@ -251,18 +212,90 @@ html {
   padding: 0.4em;
 }
 
+.gallery {
+  margin-top: -56px;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+}
+.gallery h1 {
+  padding: 1%;
+  font-size: 5rem;
+  font-family: "Prompt", sans-serif;
+}
+.gallery .container {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 10rem 30rem;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+.gallery .container .gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gallery .container .gallery-item .gallery-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery .container .gallery-item .gallery-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.gallery .container .gallery-item:hover .gallery-image img {
+  transform: scale(1.5);
+}
+.gallery .c-1 {
+  grid-column: span 1;
+}
+.gallery .c-2 {
+  grid-column: span 2;
+}
+.gallery .c-3 {
+  grid-column: span 3;
+}
+.gallery .c-4 {
+  grid-column: span 4;
+}
+.gallery .r-1 {
+  grid-row: span 1;
+}
+.gallery .r-2 {
+  grid-row: span 2;
+}
+.gallery .r-3 {
+  grid-row: span 3;
+}
+.gallery .r-4 {
+  grid-row: span 4;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .discord {
   text-align: center;
   position: relative;
   padding-top: 30px;
   margin-top: -8px;
   height: 100vh;
-  background-color: #fcff3c;
+  background-color: rgb(252, 255, 60);
 }
-
 .discord h1 {
   padding: 2em;
   font-size: 3rem;
   font-weight: bold;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
