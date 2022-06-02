@@ -2,10 +2,13 @@
 * {
     box-sizing: border-box;
 }
-body, html {
+
+body,
+html {
     font-size: 16px;
     height: 100%;
-  }
+}
+
 .navbar {
     background-color: rgb(48, 48, 48);
     width: 100%;
@@ -37,7 +40,8 @@ body, html {
         border-bottom: 3px solid rgb(255, 228, 26);
     }
 }
-.parallax{
+
+.parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,9 +50,9 @@ body, html {
 
 @media only screen and (max-device-width: 1366px) {
     .parallax {
-      background-attachment: scroll;
+        background-attachment: scroll;
     }
-  }
+}
 
 .home {
     padding-top: 30px;
@@ -64,7 +68,7 @@ body, html {
         min-height: 100vh;
         height: auto;
         h1 {
-            font-family: 'Prompt', sans-serif;
+            font-family: "Prompt", sans-serif;
             font-size: 3rem;
             text-align: center;
             text-transform: uppercase;
@@ -91,7 +95,7 @@ body, html {
     .bodytext {
         h1 {
             color: rgb(255, 255, 255);
-            font-family: 'Prompt', sans-serif;
+            font-family: "Prompt", sans-serif;
             font-weight: 200;
             font-size: 3rem;
             text-align: right;
@@ -114,14 +118,14 @@ body, html {
 .members {
     background-color: rgb(255, 197, 91);
     padding-top: 30px;
-    margin-top: -8px;
+    margin-top: -24px;
     margin-bottom: 8px;
     height: auto;
     .wrapper {
         margin-top: 3%;
         h1 {
             color: rgb(255, 255, 255);
-            font-family: 'Prompt', sans-serif;
+            font-family: "Prompt", sans-serif;
             font-weight: 200;
             font-size: 3rem;
             text-align: center;
