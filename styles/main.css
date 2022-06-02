@@ -9,6 +9,7 @@ html {
   font-size: 16px;
   height: 100%;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -105,7 +106,7 @@ html {
   border: 2px solid #ffe41a;
   position: relative;
   overflow: hidden;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
