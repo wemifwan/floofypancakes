@@ -101,39 +101,44 @@ html {
 }
 
 .home .welcome h1 .learn-more {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
+  padding: 0.8em 1.8em;
+  border: 2px solid #ffe41a;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #ffe41a;
 }
 
-.home .welcome h1 .learn-more:after {
-  content: "";
-  background-color: #ffe54c;
-  width: 100%;
-  z-index: -1;
+.home .welcome h1 .learn-more::before {
+  content: '';
+  width: 0;
+  height: 300%;
   position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background: #ffe41a;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
 }
 
-.home .welcome h1 .learn-more:hover:after {
-  top: 0px;
-  left: 0px;
+.home .welcome h1 .learn-more:hover::before {
+  width: 105%;
+}
+
+.home .welcome h1 .learn-more:hover {
+  color: #111;
+  cursor: pointer;
 }
 
 .about {
