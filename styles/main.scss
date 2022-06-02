@@ -37,6 +37,19 @@ body, html {
         border-bottom: 3px solid rgb(255, 228, 26);
     }
 }
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
 .home {
     padding-top: 30px;
     margin-top: -8px;
@@ -44,10 +57,6 @@ body, html {
     min-height: 100vh;
     height: auto;
     background-image: url(https://i.imgur.com/rumkPcr.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     .welcome {
         display: flex;
         align-items: center;
@@ -79,10 +88,6 @@ body, html {
     min-height: 100vh;
     height: auto;
     background-image: url(https://i.imgur.com/dyV8XGX.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     .bodytext {
         h1 {
             color: rgb(255, 255, 255);
