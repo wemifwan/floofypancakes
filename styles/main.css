@@ -60,6 +60,14 @@ html {
   }
 }
 
+.color {
+  color: #ffe41a;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .home {
   padding-top: 3.4rem;
   min-height: 100vh;
@@ -143,17 +151,29 @@ html {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 3.4rem;
   padding-bottom: 3.4rem;
   height: auto;
-  background-color: #636363;
+  background-color: #1b1b1b;
+}
+
+.about img {
+  margin: 5rem;
+  height: 32rem;
 }
 
 .about .bodytext {
-  margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 50%;
-  margin-bottom: 3%;
+  margin: 5rem 0rem 5rem 5rem;
+  width: 40%;
 }
 
 .about .bodytext h1 {
@@ -172,10 +192,9 @@ html {
   color: white;
   font-family: "Prompt", sans-serif;
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: left;
   text-transform: uppercase;
-  text-shadow: 5px 3px 5px #696969;
 }
 
 .about .bodytext p {
@@ -184,14 +203,9 @@ html {
   color: white;
   font-family: "Prompt", sans-serif;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.about .bodytext img {
-  height: 30rem;
-  float: right;
 }
 
 .members {
@@ -199,7 +213,7 @@ html {
   padding-top: 3.4rem;
   margin-bottom: 8px;
   height: auto;
-  background-color: #ffc55b;
+  background-color: #353535;
 }
 
 .members .wrapper {
@@ -272,6 +286,100 @@ html {
   height: 12em;
   margin-top: 1em;
   padding: 0.4em;
+}
+
+.gallery {
+  margin-top: -56px;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+}
+
+.gallery h1 {
+  padding: 1%;
+  font-size: 5rem;
+  font-family: "Prompt", sans-serif;
+}
+
+.gallery .container {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 10rem 30rem;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+.gallery .container .gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery .container .gallery-item .gallery-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery .container .gallery-item .gallery-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery .container .gallery-item:hover .gallery-image img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.gallery .c-1 {
+  grid-column: span 1;
+}
+
+.gallery .c-2 {
+  grid-column: span 2;
+}
+
+.gallery .c-3 {
+  grid-column: span 3;
+}
+
+.gallery .c-4 {
+  grid-column: span 4;
+}
+
+.gallery .r-1 {
+  grid-row: span 1;
+}
+
+.gallery .r-2 {
+  grid-row: span 2;
+}
+
+.gallery .r-3 {
+  grid-row: span 3;
+}
+
+.gallery .r-4 {
+  grid-row: span 4;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .discord {
