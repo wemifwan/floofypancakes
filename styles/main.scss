@@ -49,11 +49,12 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     .welcome {
-        margin: auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        height: auto;
         h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-family: 'Prompt', sans-serif;
             font-size: 3rem;
             text-align: center;

@@ -59,10 +59,6 @@ body, html {
 }
 
 .home .welcome {
-  margin: auto 0;
-}
-
-.home .welcome h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +68,11 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 100vh;
+  height: auto;
+}
+
+.home .welcome h1 {
   font-family: 'Prompt', sans-serif;
   font-size: 3rem;
   text-align: center;
