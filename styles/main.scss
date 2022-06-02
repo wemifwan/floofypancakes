@@ -55,11 +55,11 @@ html {
 }
 
 .home {
-    padding-top: 30px;
     margin-top: -8px;
-    margin-bottom: 8px;
+    padding-top: 50px;
     min-height: 100vh;
     height: auto;
+    background-color: rgb(30, 30, 30);
     background-image: url(https://i.imgur.com/rumkPcr.jpg);
     .welcome {
         display: flex;
@@ -68,6 +68,7 @@ html {
         min-height: 100vh;
         height: auto;
         h1 {
+            margin-bottom: 7rem;
             font-family: "Prompt", sans-serif;
             font-size: 3rem;
             text-align: center;
@@ -87,10 +88,10 @@ html {
 
 .about {
     padding-top: 30px;
-    margin-top: -8px;
     min-height: 100vh;
     margin-bottom: -24px;
     height: auto;
+    background-color: rgb(99, 99, 99);
     background-image: url(https://i.imgur.com/dyV8XGX.png);
     .bodytext {
         h1 {
