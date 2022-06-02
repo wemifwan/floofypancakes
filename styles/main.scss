@@ -48,23 +48,25 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    h1 {
+    .welcome {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Prompt', sans-serif;
-        font-size: 3rem;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 5px 3px 5px #696969;
-        overflow: none;
-        .light {
-            color: white;
-            font-weight: 200;
-        }
-        .bold {
-            color: rgb(255, 255, 125);
-            font-weight: 500;
+        h1 {
+            font-family: 'Prompt', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 5px 3px 5px #696969;
+            overflow: none;
+            .light {
+                color: white;
+                font-weight: 200;
+            }
+            .bold {
+                color: rgb(255, 255, 125);
+                font-weight: 500;
+            }
         }
     }
 }

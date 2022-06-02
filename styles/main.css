@@ -5,6 +5,7 @@
 }
 
 body, html {
+  font-size: 16px;
   height: 100%;
 }
 
@@ -45,6 +46,19 @@ body, html {
 }
 
 .home {
+  padding-top: 30px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  min-height: 100vh;
+  height: auto;
+  background-image: url(https://i.imgur.com/rumkPcr.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,32 +68,23 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
-  margin-top: -8px;
-  margin-bottom: 8px;
-  min-height: 100vh;
-  height: 100vh;
-  background-image: url(https://i.imgur.com/rumkPcr.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.home h1 {
+.home .welcome h1 {
   font-family: 'Prompt', sans-serif;
-  font-size: 6em;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 5px 3px 5px #696969;
+  overflow: none;
 }
 
-.home h1 .light {
+.home .welcome h1 .light {
   color: white;
   font-weight: 200;
 }
 
-.home h1 .bold {
+.home .welcome h1 .bold {
   color: #ffff7d;
   font-weight: 500;
 }
@@ -89,7 +94,7 @@ body, html {
   margin-top: -8px;
   margin-bottom: 8px;
   min-height: 100vh;
-  height: 100vh;
+  height: auto;
   background-color: #b3aead;
   background-image: url(https://i.imgur.com/dyV8XGX.png);
   background-attachment: fixed;
@@ -102,7 +107,7 @@ body, html {
   color: white;
   font-family: 'Prompt', sans-serif;
   font-weight: 200;
-  font-size: 6em;
+  font-size: 3rem;
   text-align: right;
   text-transform: uppercase;
   text-shadow: 5px 3px 5px #696969;
@@ -112,7 +117,7 @@ body, html {
 
 .about .bodytext p {
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: right;
   padding-top: 5%;
   padding-left: 5%;
@@ -137,7 +142,7 @@ body, html {
   color: white;
   font-family: 'Prompt', sans-serif;
   font-weight: 200;
-  font-size: 6em;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 5px 3px 5px #696969;
@@ -171,13 +176,13 @@ body, html {
 
 .members .wrapper .fc .member h3 {
   color: #ffc55b;
-  font-size: 2em;
+  font-size: 2rem;
   margin-top: 3.5em;
 }
 
 .members .wrapper .fc .member .rank {
   color: black;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-transform: uppercase;
   margin: 1em 0;
 }
@@ -203,7 +208,6 @@ body, html {
 
 .discord {
   text-align: center;
-  font-size: 16px;
   position: relative;
   padding-top: 30px;
   margin-top: -8px;
@@ -213,7 +217,7 @@ body, html {
 
 .discord h1 {
   padding: 2em;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
