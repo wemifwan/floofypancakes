@@ -130,6 +130,7 @@ html {
 
 .about {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 3.4rem;
