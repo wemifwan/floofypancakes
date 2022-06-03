@@ -18,7 +18,7 @@ html {
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -187,7 +187,7 @@ html {
 }
 
 .about .bodytext {
-  margin: 5rem 0rem 5rem 5rem;
+  margin: 5rem;
   width: 60%;
 }
 
