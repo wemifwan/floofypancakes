@@ -210,7 +210,7 @@ html {
   text-justify: inter-word;
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .about .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
