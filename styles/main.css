@@ -58,6 +58,12 @@ html {
   .parallax {
     background-attachment: scroll;
   }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .color {
@@ -208,15 +214,6 @@ html {
   font-size: 1.3rem;
   text-align: justify;
   text-justify: inter-word;
-}
-
-@media screen and (max-device-width: 600px) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 .members {

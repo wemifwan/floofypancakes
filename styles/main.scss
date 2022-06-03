@@ -52,6 +52,9 @@ html {
     .parallax {
       background-attachment: scroll;
     }
+    .about {
+        flex-direction: column;
+    }
 }
 
 .color {
@@ -173,12 +176,6 @@ html {
             text-align: justify;
             text-justify: inter-word;
         }
-    }
-}
-
-@media screen and (max-device-width: 600px) {
-    .about {
-        flex-direction: column;
     }
 }
 
