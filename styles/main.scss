@@ -53,6 +53,10 @@ html {
     .parallax {
         background-attachment: scroll;
     }
+
+    .about {
+        flex-direction: column;
+      }
 }
 .color {
     color:rgb(255, 228, 26);
@@ -127,11 +131,7 @@ html {
         }
     }
 }
-@media(max-width:800px) {
-    .about {
-      flex-direction: column;
-    }
-  }
+
 .about {
     display: flex;
     align-items: center;
@@ -143,11 +143,11 @@ html {
     background-color: rgb(27, 27, 27);
     img {
         margin: 5rem;
-        height: 32rem;
+        width: 50%;
     }
     .bodytext {
         margin: 5rem 0rem 5rem 5rem;
-        width: 40%;
+        width: 60%;
         h1 {
             margin: auto;
             color: rgb(255, 255, 255);
@@ -245,6 +245,7 @@ html {
         }
     }
 }
+
 .gallery {
     margin-top: -56px;
     padding: 0;
@@ -319,6 +320,7 @@ html {
         }
     }
 }
+
 .discord {
     text-align: center;
     position: relative;
