@@ -47,10 +47,10 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @media only screen and (max-device-width: 1366px) {
-        .parallax {
-          background-attachment: scroll;
-        }
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
     }
 }
 
@@ -174,10 +174,11 @@ html {
             text-justify: inter-word;
         }
     }
-    @media screen and (max-width: 600px) {
-        .about {
-        flex-direction: column;
-        }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+    flex-direction: column;
     }
 }
 
@@ -314,7 +315,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 600px) {   
+@media only screen and (max-device-width: 600px) {   
     .gallery {
        .container {
           grid-template-columns: repeat(3, 1fr);
