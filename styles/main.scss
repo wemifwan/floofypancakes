@@ -127,10 +127,13 @@ html {
         }
     }
 }
-
+@media(max-width:800px) {
+    .about {
+      flex-direction: column;
+    }
+  }
 .about {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 3.4rem;
