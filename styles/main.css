@@ -16,6 +16,9 @@ html {
   .parallax {
     background-attachment: scroll;
   }
+}
+
+@media only screen and (max-device-width: 600px) {
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

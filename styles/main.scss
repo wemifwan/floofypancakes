@@ -15,8 +15,10 @@ html {
     .parallax {
         background-attachment: scroll;
     }
+}
 
-    .about {
+@media only screen and (max-device-width: 600px) {
+     .about {
         flex-direction: column;
       }
 
