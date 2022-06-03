@@ -12,6 +12,22 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-device-width: 600px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .navbar {
   background-color: #303030;
   width: 100%;
@@ -54,18 +70,6 @@ html {
   background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .color {
   color: #ffe41a;
 }
@@ -78,7 +82,6 @@ html {
   padding-top: 3.4rem;
   min-height: 100vh;
   height: auto;
-  width: 100vw;
   background-color: #1e1e1e;
   background-image: url(https://i.imgur.com/rumkPcr.jpg);
 }
@@ -177,6 +180,7 @@ html {
 .about img {
   margin: 5rem;
   width: 50%;
+  text-align: center;
 }
 
 .about .bodytext {
@@ -381,13 +385,6 @@ html {
 
 .gallery .r-4 {
   grid-row: span 4;
-}
-
-@media only screen and (max-width: 600px) {
-  .gallery .container {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 .discord {
