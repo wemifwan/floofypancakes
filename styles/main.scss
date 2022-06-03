@@ -176,9 +176,9 @@ html {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
     .about {
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 
