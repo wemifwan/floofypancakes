@@ -12,25 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .gallery .container {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .navbar {
   background-color: #303030;
   width: 100%;
@@ -71,6 +52,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax .parallax {
+    background-attachment: scroll;
+  }
 }
 
 .color {
@@ -221,6 +208,15 @@ html {
   font-size: 1.3rem;
   text-align: justify;
   text-justify: inter-word;
+}
+
+@media screen and (max-device-width: 600px) {
+  .about .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .members {
@@ -388,6 +384,13 @@ html {
 
 .gallery .r-4 {
   grid-row: span 4;
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .discord {
