@@ -58,7 +58,7 @@ html {
   .parallax {
     background-attachment: scroll;
   }
-  .about {
+  .mobile-view {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
