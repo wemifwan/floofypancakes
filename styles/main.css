@@ -407,9 +407,15 @@ html {
   background-color: #6073bb;
 }
 
+.discord iframe {
+  margin: 5rem;
+  text-align: center;
+  border-radius: 3%;
+}
+
 .discord .bodytext {
   margin: 5rem;
-  width: 30%;
+  width: 60%;
 }
 
 .discord .bodytext h1 {
@@ -432,12 +438,6 @@ html {
   font-size: 1.3rem;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.discord iframe {
-  margin: 5rem;
-  text-align: center;
-  border-radius: 3%;
 }
 
 .footer {
