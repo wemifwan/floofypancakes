@@ -48,10 +48,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 @media only screen and (max-device-width: 1366px) {
     .parallax {
-        background-attachment: scroll;
+      background-attachment: scroll;
+    }
+    .mobile-view {
+        flex-direction: column;
     }
 }
 
@@ -67,7 +69,6 @@ html {
     padding-top: 3.4rem;
     min-height: 100vh;
     height: auto;
-    width: 100vw;
     background-color: rgb(30, 30, 30);
     background-image: url(https://i.imgur.com/rumkPcr.jpg);
     .welcome {
@@ -136,15 +137,16 @@ html {
     padding-top: 3.4rem;
     padding-bottom: 3.4rem;
     height: auto;
-    width: 100vw;
+    max-width: 100vw;
     background-color: rgb(27, 27, 27);
     img {
         margin: 5rem;
-        height: 32rem;
+        width: 50%;
+        text-align: center;
     }
     .bodytext {
-        margin: 5rem 0rem 5rem 5rem;
-        width: 40%;
+        margin: 5rem;
+        width: 60%;
         h1 {
             margin: auto;
             color: rgb(255, 255, 255);
@@ -310,24 +312,64 @@ html {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {   
     .gallery {
-        .container {
-            grid-template-columns: repeat(3, 1fr);
+       .container {
+          grid-template-columns: repeat(3, 1fr);
         }
     }
 }
 
 .discord {
-    text-align: center;
-    position: relative;
-    padding-top: 30px;
-    margin-top: -8px;
-    height: 100vh;
-    background-color: rgb(252, 255, 60);
-    h1 {
-        padding: 2em;
-        font-size: 3rem;
-        font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+    height: auto;
+    max-width: 100vw;
+    background-color: #6073bb;
+    iframe {
+        margin: 5rem;
+        text-align: center;
+        border-radius: 3%;
+    }
+    .bodytext {
+        margin: 5rem;
+        width: 60%;
+        h1 {
+            margin: auto;
+            color: rgb(255, 255, 255);
+            font-family: "Prompt", sans-serif;
+            font-weight: 200;
+            font-size: 3rem;
+            text-align: left;
+            text-transform: uppercase;
+            text-shadow: 5px 3px 5px #696969;
+        }
+        p {
+            margin-top: 2.5rem;
+            margin-bottom: -0.5rem;
+            color: rgb(255, 255, 255);
+            font-family: "Prompt", sans-serif;
+            font-weight: 200;
+            font-size: 1.3rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
     }
 }
+
+.footer {
+    margin-top: auto;
+    padding: 2.5rem 0;
+    background-color: rgb(48, 48, 48);
+    .copyright {
+        margin-top: 1rem;
+        color: rgb(255, 255, 255);
+        font-family: "Roboto", sans-serif;
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 0.5;
+  }
+}  
