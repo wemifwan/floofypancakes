@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,70 +10,504 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?" />
     <link rel="manifest" href="site.webmanifest?" />
-</head>
+  </head>
 
-<body style="background-color: rgb(48, 48, 48)">
-    <div class="navbar" id="navigation">
-        <ul>
-            <li><a href="#Home">HOME</a></li>
-            <li><a href="#About">ABOUT</a></li>
-            <li><a href="members.html">MEMBERS</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="#Discord">DISCORD</a></li>
-        </ul>
-    </div>
+  <body style="background-color: rgb(48, 48, 48)">
+    <button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">
+      Home
+    </button>
+    <button class="tablink" onclick="openPage('Members', this)">Members</button>
+    <button class="tablink" onclick="openPage('Gallery', this)">Gallery</button>
+    <button class="tablink" onclick="openPage('Discord', this)">Discord</button>
 
-    <div class="home parallax" id="Home">
-        <div class="welcome">
-            <h1>
-                <span class="light">Welcome to</span>
-                <span class="bold">Floofy Pancakes &lt;CAKE&gt;</span><br />
-                <a href="#About"><button class="learn-more">Learn More</button></a>
-            </h1>
-        </div>
-    </div>
-
-    <div class="about mobile-view" id="About">
+    <div class="home parallax tabcontent" id="Home">
+      <div class="welcome">
+        <h1>
+          <span class="light">Welcome to</span>
+          <span class="bold">Floofy Pancakes &lt;CAKE&gt;</span><br />
+          <a href="#About"><button class="learn-more">Learn More</button></a>
+        </h1>
+      </div>
+      <div class="about mobile-view" id="About">
         <div class="bodytext">
-            <h1>About us</h1>
-            <h3>Final Fantasy XIV, Free Company</h3>
-            <p>
-                Founded by a certain bored penguin that wanted to fiddle with the free company workshop, we are a casual FC based in
-                <span class="color">Tonberry</span> who are just trying to enjoy our time in the vast land of Eorzea, be it role-playing or raiding! Our
-                <span class="color">main</span> timezone is GMT +8 but we welcome players from anywhere.
-            </p>
-            <p>
-                We hold <span class="color">activities</span> like
-                <span class="italic">treasure map hunts, mount farming, learning old raid contents</span
-          >
-          and <span class="italic">holiday events</span>.
-            </p>
-            <p>
-                You can visit us at <span class="color">Ward 16, Plot 39</span> in Mist Subdivision!
-            </p>
+          <h1>About us</h1>
+          <h3>Final Fantasy XIV, Free Company</h3>
+          <p>
+            Founded by a certain bored penguin that wanted to fiddle with the
+            free company workshop, we are a casual FC based in
+            <span class="color">Tonberry</span> who are just trying to enjoy our
+            time in the vast land of Eorzea, be it role-playing or raiding! Our
+            <span class="color">main</span> timezone is GMT +8 but we welcome
+            players from anywhere.
+          </p>
+          <p>
+            We hold <span class="color">activities</span> like
+            <span class="italic"
+              >treasure map hunts, mount farming, learning old raid
+              contents</span
+            >
+            and <span class="italic">holiday events</span>.
+          </p>
+          <p>
+            You can visit us at <span class="color">Ward 16, Plot 39</span> in
+            Mist Subdivision!
+          </p>
         </div>
-        <img src="https://i.imgur.com/dyV8XGX.png" alt="floofy_pancakes_photo" />
+        <img
+          src="https://i.imgur.com/dyV8XGX.png"
+          alt="floofy_pancakes_photo"
+        />
+      </div>
     </div>
 
+    <div class="members tabcontent" id="Members">
+      <div class="wrapper">
+        <h1>Members</h1>
 
-    <div class="discord mobile-view" id="Discord">
-        <div class="bodytext">
-            <h1>Join us on Discord!</h1>
+        <div class="fc">
+          <div class="member">
+            <div class="profilephoto">
+              <a
+                href="https://na.finalfantasyxiv.com/lodestone/character/31142929/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="styles/images/floofy.png" alt="floofy_pengu_photo" />
+              </a>
+            </div>
+            <h3>Floofy Pengu</h3>
+            <p class="rank">Emperor Penguin</p>
             <p>
-                Anyone is welcomed to <span class="color">join</span> but please keep in mind of the <span class="color">rules</span> and to treat each other basic respect. Failure to adhere to them would result in a
-                <span class="color italic">ban</span>!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
             </p>
-        </div>
-        <iframe src="https://discord.com/widget?id=851542973253419018&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
-    <div class="footer">
-        <footer>
-            <p class="copyright">© 2022 Floofy Pancakes. All Rights Reserved.</p>
-            <p class="copyright">
-                © 2010-2022 SQUARE ENIX CO., LTD. All Rights Reserved.
-            </p>
-        </footer>
-    </div>
-</body>
+          </div>
 
+          <div class="member">
+            <div class="profilephoto">
+              <a
+                href="https://na.finalfantasyxiv.com/lodestone/character/34288517/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="styles/images/midnight.png"
+                  alt="midnight_thirsty_photo"
+              /></a>
+            </div>
+            <h3>Midnight Thirsty</h3>
+            <p class="rank">Eggs</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <div class="profilephoto">
+              <a
+                href="https://na.finalfantasyxiv.com/lodestone/character/33119923/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="styles/images/remi.png" alt="remi_flan_photo"
+              /></a>
+            </div>
+            <h3>Remi Flan</h3>
+            <p class="rank">Eggs</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Alaudette Customer</h3>
+            <div class="profilephoto">
+              <a
+                href="https://na.finalfantasyxiv.com/lodestone/character/37520483/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="styles/images/alaudette.png"
+                  alt="alaudette_castellanos_photo"
+              /></a>
+            </div>
+            <p class="rank">Milk</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Dada Ren Shiro Tonberry</h3>
+            <div class="profilephoto">
+              <a
+                href="https://na.finalfantasyxiv.com/lodestone/character/25684185/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="styles/images/ren.png" alt="ren_shiro_photo"
+              /></a>
+            </div>
+            <p class="rank">Milk</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Valeria Badonkadonks</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src="styles/images/valeria.png" alt="valeria_photo"
+              /></a>
+            </div>
+            <p class="rank">Milk</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Kiyohime Asakawa</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src="styles/images/kiyohime.png" alt="kiyohime_photo"
+              /></a>
+            </div>
+            <p class="rank">Milk</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Mackie Parfit</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Milk</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Rinze Morino</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Milk</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Haruna Luna</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src="styles/images/haruna.png" alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Sugar</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Kearya Keara</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src="styles/images/kearya.png" alt="kearya_photo"
+              /></a>
+            </div>
+            <p class="rank">Sugar</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+
+          <div class="member">
+            <h3>Nanase Sevencrown</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src="styles/images/nanase.png" alt="nanase_photo"
+              /></a>
+            </div>
+            <p class="rank">Sugar</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Luminosite Eternelle</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Sugar</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Skuee Fantasy</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Sugar</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>N'yanto Nyaku</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Sugar</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Mushroom Soup</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Mudpie</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Junn Kichi</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Mudpie</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Bread Sticks</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Mudpie</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Imania Dorne</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Flour</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Fhey Rydberg</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Flour</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Kwyooo Esterando</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Flour</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+          <div class="member">
+            <h3>Soshi Andrew</h3>
+            <div class="profilephoto">
+              <a href=" " target="_blank" rel="noopener noreferrer"
+                ><img src=" " alt=" _photo"
+              /></a>
+            </div>
+            <p class="rank">Flour</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              alias. Quia repellat laborum accusamus voluptatum repudiandae
+              quisquam omnis pariatur quo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery tabcontent" id="Gallery">
+      <h1>Gallery</h1>
+      <div class="container">
+        <div class="gallery-container c-2 r-2">
+          <div class="gallery-item">
+            <div class="gallery-image">
+              <img
+                src="https://source.unsplash.com/random/1600x900/?fruit"
+                alt="fruiit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container c-1 r-4">
+          <div class="gallery-item">
+            <div class="gallery-image">
+              <img
+                src="https://source.unsplash.com/random/1600x900/?nature"
+                alt="nature"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container r-2">
+          <div class="gallery-item">
+            <div class="gallery-image">
+              <img
+                src="https://source.unsplash.com/random/1600x900/?people"
+                alt="people"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container r-2">
+          <div class="gallery-item">
+            <div class="gallery-image">
+              <img
+                src="https://source.unsplash.com/random/1600x900/?urban"
+                alt="urban"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container c-1 r-2">
+          <div class="gallery-item">
+            <div class="gallery-image">
+              <img
+                src="https://source.unsplash.com/random/1600x900/?anime"
+                alt="anime"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gallery-container r-2">
+          <div class="gallery-item">
+            <div class="gallery-image">
+              <img
+                src="https://source.unsplash.com/random/1600x900/?games"
+                alt="games"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="discord mobile-view tabcontent" id="Discord">
+      <div class="bodytext">
+        <h1>Join us on Discord!</h1>
+        <p>
+          Anyone is welcomed to <span class="color">join</span> but please keep
+          in mind of the <span class="color">rules</span> and to treat each
+          other basic respect. Failure to adhere to them would result in a
+          <span class="color italic">ban</span>!
+        </p>
+      </div>
+      <iframe
+        src="https://discord.com/widget?id=851542973253419018&theme=dark"
+        width="350"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
+    </div>
+
+    <script>
+      function openPage(pageName, elmnt) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
 </html>

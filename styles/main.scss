@@ -11,35 +11,28 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: rgb(48, 48, 48);
-  width: 100%;
-  height: 3.4rem;
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  ul {
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  li a {
-    color: rgb(255, 255, 255);
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    border-bottom: 3px solid transparent;
-  }
-  li a:hover {
-    color: rgb(255, 228, 26);
-    border-bottom: 3px solid rgb(255, 228, 26);
-  }
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
 }
 
 .parallax {
@@ -67,10 +60,8 @@ html {
 }
 
 .home {
-  padding-top: 3.4rem;
   min-height: 100vh;
-  height: auto;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(17, 17, 17);
   background-image: url(https://i.imgur.com/rumkPcr.jpg);
   .welcome {
     display: flex;
@@ -79,7 +70,7 @@ html {
     min-height: 100vh;
     height: auto;
     h1 {
-      margin-bottom: 3.5rem;
+      margin-bottom: 15rem;
       font-family: "Prompt", sans-serif;
       font-size: 3rem;
       text-align: center;
@@ -135,9 +126,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3.4rem;
-  padding-bottom: 3.4rem;
   height: auto;
+  margin-top: -5rem;
+  margin-bottom: 1.5rem;
   max-width: 100vw;
   background-color: rgb(27, 27, 27);
   img {
@@ -181,9 +172,6 @@ html {
 }
 
 .members {
-  margin-top: -1.5rem;
-  padding-top: 3.4rem;
-  margin-bottom: 8px;
   height: auto;
   background-color: rgb(53, 53, 53);
   .wrapper {
@@ -246,8 +234,6 @@ html {
 }
 
 .gallery {
-  margin-top: -56px;
-  padding: 0;
   text-align: center;
   background-color: white;
   h1 {
@@ -357,19 +343,5 @@ html {
       text-align: justify;
       text-justify: inter-word;
     }
-  }
-}
-
-.footer {
-  margin-top: auto;
-  padding: 2.5rem 0;
-  background-color: rgb(48, 48, 48);
-  .copyright {
-    margin-top: 1rem;
-    color: rgb(255, 255, 255);
-    font-family: "Roboto", sans-serif;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 0.5;
   }
 }
