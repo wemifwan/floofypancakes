@@ -28,10 +28,11 @@ html {
 
 .tablink:hover {
   color: rgb(255, 228, 26);
-    border-bottom: 3px solid rgb(255, 228, 26);
+  border-bottom: 3px solid rgb(255, 228, 26);
 }
 
 /* Style the tab content (and add height:100% for full page content) */
+
 .tabcontent {
   color: white;
   display: none;
@@ -201,7 +202,7 @@ html {
         background-color: #fff;
         margin: 3em;
         margin-bottom: 5em;
-        width: 30em;
+        width: 25%;
         padding: 2em;
         line-height: 2em;
         position: relative;
@@ -217,7 +218,7 @@ html {
           margin: 1em 0;
         }
         p {
-          color: rgb(0, 0, 0)
+          color: rgb(0, 0, 0);
         }
         .profilephoto {
           width: 18em;
@@ -355,5 +356,4 @@ html {
       }
     }
   }
-  
 }
