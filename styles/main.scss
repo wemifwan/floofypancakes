@@ -11,35 +11,32 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  background-color: rgb(48, 48, 48);
-  width: 100%;
-  height: 3.4rem;
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  ul {
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  li a {
-    color: rgb(255, 255, 255);
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    border-bottom: 3px solid transparent;
-  }
-  li a:hover {
-    color: rgb(255, 228, 26);
+.tablink {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 25%;
+  font-family: "Prompt", sans-serif;
+  font-size: 1.0625rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tablink:hover {
+  color: rgb(255, 228, 26);
     border-bottom: 3px solid rgb(255, 228, 26);
-  }
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
 }
 
 .parallax {
@@ -67,10 +64,8 @@ html {
 }
 
 .home {
-  padding-top: 3.4rem;
   min-height: 100vh;
-  height: auto;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(17, 17, 17);
   background-image: url(https://i.imgur.com/rumkPcr.jpg);
   .welcome {
     display: flex;
@@ -79,7 +74,7 @@ html {
     min-height: 100vh;
     height: auto;
     h1 {
-      margin-bottom: 3.5rem;
+      margin-bottom: 15rem;
       font-family: "Prompt", sans-serif;
       font-size: 3rem;
       text-align: center;
@@ -135,9 +130,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3.4rem;
-  padding-bottom: 3.4rem;
   height: auto;
+  margin-top: -5rem;
+  margin-bottom: 1.5rem;
   max-width: 100vw;
   background-color: rgb(27, 27, 27);
   img {
@@ -181,22 +176,18 @@ html {
 }
 
 .members {
-  margin-top: -1.5rem;
-  padding-top: 3.4rem;
-  margin-bottom: 8px;
   height: auto;
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(96, 46, 46);
   .wrapper {
-    margin-top: 3%;
     h1 {
       color: rgb(255, 255, 255);
       font-family: "Prompt", sans-serif;
       font-weight: 200;
-      font-size: 3rem;
+      font-size: 2rem;
       text-align: center;
       text-transform: uppercase;
       text-shadow: 5px 3px 5px #696969;
-      margin-bottom: 1em;
+      margin-bottom: 3.5em;
     }
     .fc {
       display: flex;
@@ -208,8 +199,8 @@ html {
       flex-wrap: wrap;
       .member {
         background-color: #fff;
-        margin: 4em;
-        margin-bottom: 3em;
+        margin: 3em;
+        margin-bottom: 5em;
         width: 30em;
         padding: 2em;
         line-height: 2em;
@@ -224,6 +215,9 @@ html {
           font-size: 0.8rem;
           text-transform: uppercase;
           margin: 1em 0;
+        }
+        p {
+          color: rgb(0, 0, 0)
         }
         .profilephoto {
           width: 18em;
@@ -246,8 +240,6 @@ html {
 }
 
 .gallery {
-  margin-top: -56px;
-  padding: 0;
   text-align: center;
   background-color: white;
   h1 {
@@ -321,55 +313,47 @@ html {
 }
 
 .discord {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3.4rem;
-  padding-bottom: 3.4rem;
-  height: auto;
+  height: 100vh;
   max-width: 100vw;
   background-color: #6073bb;
-  iframe {
-    margin: 5rem;
-    text-align: center;
-    border-radius: 3%;
-  }
-  .bodytext {
-    margin: 5rem;
-    width: 60%;
-    h1 {
-      margin: auto;
-      color: rgb(255, 255, 255);
-      font-family: "Prompt", sans-serif;
-      font-weight: 200;
-      font-size: 3rem;
-      text-align: left;
-      text-transform: uppercase;
-      text-shadow: 5px 3px 5px #696969;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+    height: 100%;
+    max-width: 100vw;
+    background-color: inherit;
+    iframe {
+      margin: 5rem;
+      text-align: center;
+      border-radius: 3%;
     }
-    p {
-      margin-top: 2.5rem;
-      margin-bottom: -0.5rem;
-      color: rgb(255, 255, 255);
-      font-family: "Prompt", sans-serif;
-      font-weight: 200;
-      font-size: 1.3rem;
-      text-align: justify;
-      text-justify: inter-word;
+    .bodytext {
+      margin: 5rem;
+      width: 40%;
+      h1 {
+        margin: auto;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: left;
+        text-transform: uppercase;
+        text-shadow: 5px 3px 5px #696969;
+      }
+      p {
+        margin-top: 2.5rem;
+        margin-bottom: -0.5rem;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: inter-word;
+      }
     }
   }
-}
-
-.footer {
-  margin-top: auto;
-  padding: 2.5rem 0;
-  background-color: rgb(48, 48, 48);
-  .copyright {
-    margin-top: 1rem;
-    color: rgb(255, 255, 255);
-    font-family: "Roboto", sans-serif;
-    font-size: 0.8rem;
-    text-align: center;
-    line-height: 0.5;
-  }
+  
 }
