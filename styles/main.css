@@ -87,8 +87,9 @@ html {
 
 .home {
   min-height: 100vh;
+  height: auto;
   background-color: rgb(17, 17, 17);
-  background-image: url(https://i.imgur.com/rumkPcr.jpg);
+  background-image: url("images/endwalkerendtest.png");
 }
 .home .welcome {
   display: flex;
@@ -147,8 +148,7 @@ html {
   color: #111;
   cursor: pointer;
 }
-
-.about {
+.home .about {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,16 +158,16 @@ html {
   max-width: 100vw;
   background-color: rgb(27, 27, 27);
 }
-.about img {
+.home .about img {
   margin: 5rem;
   width: 50%;
   text-align: center;
 }
-.about .bodytext {
+.home .about .bodytext {
   margin: 5rem;
   width: 60%;
 }
-.about .bodytext h1 {
+.home .about .bodytext h1 {
   margin: auto;
   color: rgb(255, 255, 255);
   font-family: "Prompt", sans-serif;
@@ -177,7 +177,7 @@ html {
   text-transform: uppercase;
   text-shadow: 5px 3px 5px #696969;
 }
-.about .bodytext h3 {
+.home .about .bodytext h3 {
   margin: auto;
   color: rgb(255, 255, 255);
   font-family: "Prompt", sans-serif;
@@ -186,7 +186,7 @@ html {
   text-align: left;
   text-transform: uppercase;
 }
-.about .bodytext p {
+.home .about .bodytext p {
   margin-top: 2.5rem;
   margin-bottom: -0.5rem;
   color: rgb(255, 255, 255);
@@ -196,22 +196,20 @@ html {
   text-align: justify;
   text-justify: inter-word;
 }
-
-.Youtube {
+.home .Youtube {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5em;
   display: block;
 }
-.Youtube .Youtube-container {
+.home .Youtube .Youtube-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
   justify-content: center;
 }
-.Youtube .Youtube-container iframe {
+.home .Youtube .Youtube-container iframe {
   position: absolute;
   top: 0;
   left: 0;
