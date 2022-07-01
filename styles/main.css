@@ -50,13 +50,14 @@ html {
 
 .tablink:hover {
   color: rgb(255, 228, 26);
-  border-bottom: 3px solid rgb(255, 228, 26);
+  /*border-bottom: 3px solid rgb(255, 228, 26);*/
+  box-shadow: inset 0 -3px 0 rgb(255, 228, 26);
 }
 
 .tabcontent {
   color: white;
   display: none;
-  padding: 6.25rem 0;
+  padding: 3.4rem 0;
   height: 100%;
 }
 
