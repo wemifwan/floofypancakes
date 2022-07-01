@@ -1,400 +1,399 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&&family=Ubuntu&family=Lato&family=Roboto&family=Short+Stack&display=swap");
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    font-size: 16px;
-    height: 100%;
-    margin: 0px;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  height: 100%;
+  margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .scrollToTopBtn {
-    background-color: rgb(255, 228, 26);
-    border: none;
-    border-radius: 50%;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    line-height: 48px;
-    width: 48px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all 0.5s ease;
+  background-color: rgb(255, 228, 26);
+  border: none;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
 }
 
 .showBtn {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .tablink {
-    background-color: rgb(30, 30, 30);
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    width: 25%;
-    font-family: "Prompt", sans-serif;
-    font-size: 1.0625rem;
-    text-align: center;
-    text-transform: uppercase;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 25%;
+  font-family: "Prompt", sans-serif;
+  font-size: 1.0625rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .tablink:hover {
-    color: rgb(255, 228, 26);
-    /*border-bottom: 3px solid rgb(255, 228, 26);*/
-    box-shadow: inset 0 -3px 0 rgb(255, 228, 26);
+  color: rgb(255, 228, 26);
+  /*border-bottom: 3px solid rgb(255, 228, 26);*/
+  box-shadow: inset 0 -3px 0 rgb(255, 228, 26);
 }
 
 .tabcontent {
-    color: white;
-    display: none;
-    padding: 3.4rem 0;
-    height: 100%;
+  color: white;
+  display: none;
+  padding: 3.4rem 0;
+  height: 100%;
 }
 
 .parallax {
-    background-image: url("images/endwalkerendtest.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/endwalkerendtest.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-/*@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
   .mobile-view {
     flex-direction: column;
   }
-}*/
+}
 
 .color {
-    color: rgb(255, 228, 26);
+  color: rgb(255, 228, 26);
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .home {
+  height: auto;
+  background-color: rgb(17, 17, 17);
+  .welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     height: auto;
-    background-color: rgb(17, 17, 17);
-    .welcome {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        height: auto;
-        h1 {
-            margin-bottom: 15rem;
-            font-family: "Prompt", sans-serif;
-            font-size: 3rem;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 5px 3px 5px #696969;
-            .light {
-                color: white;
-                font-weight: 200;
-            }
-            .bold {
-                color: rgb(255, 255, 125);
-                font-weight: 500;
-            }
-            .learn-more {
-                padding: 0.8em 1.8em;
-                border: 2px solid rgb(255, 228, 26);
-                position: relative;
-                overflow: hidden;
-                background-color: rgba(0, 0, 0, 0.5);
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 16px;
-                transition: 0.3s;
-                z-index: 1;
-                font-family: inherit;
-                color: rgb(255, 228, 26);
-            }
-            .learn-more::before {
-                content: "";
-                width: 0;
-                height: 300%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) rotate(45deg);
-                background: rgb(255, 228, 26);
-                transition: 0.5s ease;
-                display: block;
-                z-index: -1;
-            }
-            .learn-more:hover::before {
-                width: 105%;
-            }
-            .learn-more:hover {
-                color: #111;
-                cursor: pointer;
-            }
-        }
-    }
-    .about {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        margin-bottom: 1.5rem;
-        max-width: 100vw;
-        background-color: rgb(27, 27, 27);
-        img {
-            margin: 5rem;
-            width: 50%;
-            text-align: center;
-        }
-        .bodytext {
-            margin: 5rem;
-            width: 60%;
-            h1 {
-                margin: auto;
-                color: rgb(255, 255, 255);
-                font-family: "Prompt", sans-serif;
-                font-weight: 200;
-                font-size: 3rem;
-                text-align: left;
-                text-transform: uppercase;
-                text-shadow: 5px 3px 5px #696969;
-            }
-            h3 {
-                margin: auto;
-                color: rgb(255, 255, 255);
-                font-family: "Prompt", sans-serif;
-                font-weight: 200;
-                font-size: 1.5rem;
-                text-align: left;
-                text-transform: uppercase;
-            }
-            p {
-                margin-top: 2.5rem;
-                margin-bottom: -0.5rem;
-                color: rgb(255, 255, 255);
-                font-family: "Prompt", sans-serif;
-                font-weight: 200;
-                font-size: 1.3rem;
-                text-align: justify;
-                text-justify: inter-word;
-            }
-        }
-    }
-    .Youtube {
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
+    h1 {
+      margin-bottom: 15rem;
+      font-family: "Prompt", sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 5px 3px 5px #696969;
+      .light {
+        color: white;
+        font-weight: 200;
+      }
+      .bold {
+        color: rgb(255, 255, 125);
+        font-weight: 500;
+      }
+      .learn-more {
+        padding: 0.8em 1.8em;
+        border: 2px solid rgb(255, 228, 26);
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        transition: 0.3s;
+        z-index: 1;
+        font-family: inherit;
+        color: rgb(255, 228, 26);
+      }
+      .learn-more::before {
+        content: "";
+        width: 0;
+        height: 300%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: rgb(255, 228, 26);
+        transition: 0.5s ease;
         display: block;
-        .Youtube-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%;
-            height: 0;
-            justify-content: center;
-            iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
+        z-index: -1;
+      }
+      .learn-more:hover::before {
+        width: 105%;
+      }
+      .learn-more:hover {
+        color: #111;
+        cursor: pointer;
+      }
     }
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 1.5rem;
+    max-width: 100vw;
+    background-color: rgb(27, 27, 27);
+    img {
+      margin: 5rem;
+      width: 50%;
+      text-align: center;
+    }
+    .bodytext {
+      margin: 5rem;
+      width: 60%;
+      h1 {
+        margin: auto;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: left;
+        text-transform: uppercase;
+        text-shadow: 5px 3px 5px #696969;
+      }
+      h3 {
+        margin: auto;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 1.5rem;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 2.5rem;
+        margin-bottom: -0.5rem;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+  }
+  .Youtube {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    .Youtube-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      justify-content: center;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .members {
-    height: auto;
-    background-color: rgb(96, 46, 46);
-    .wrapper {
-        h1 {
-            color: rgb(255, 255, 255);
-            font-family: "Prompt", sans-serif;
-            font-weight: 200;
-            font-size: 2rem;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 5px 3px 5px #696969;
-            margin-bottom: 3.5em;
-        }
-        .fc {
-            display: flex;
-            font-family: "Lato", sans-serif;
-            text-align: center;
-            text-transform: uppercase;
-            width: auto;
-            justify-content: center;
-            flex-wrap: wrap;
-            .member {
-                background-color: #fff;
-                margin: 3em;
-                margin-bottom: 5em;
-                width: 25%;
-                padding: 2em;
-                line-height: 2em;
-                position: relative;
-                h3 {
-                    color: rgb(255, 197, 91);
-                    font-size: 2rem;
-                    margin-top: 5.5em;
-                    word-break: break-word;
-                }
-                .rank {
-                    color: rgb(0, 0, 0);
-                    font-size: 0.8rem;
-                    text-transform: uppercase;
-                    margin: 1em 0;
-                }
-                p {
-                    color: rgb(0, 0, 0);
-                }
-                .profilephoto {
-                    width: 18em;
-                    height: 18em;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: -6em;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background: rgb(255, 255, 255);
-                    img {
-                        width: 16em;
-                        height: 16em;
-                        margin-top: 1em;
-                    }
-                }
-            }
-        }
+  height: auto;
+  background-color: rgb(96, 46, 46);
+  .wrapper {
+    h1 {
+      color: rgb(255, 255, 255);
+      font-family: "Prompt", sans-serif;
+      font-weight: 200;
+      font-size: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 5px 3px 5px #696969;
+      margin-bottom: 3.5em;
     }
+    .fc {
+      display: flex;
+      font-family: "Lato", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      width: auto;
+      justify-content: center;
+      flex-wrap: wrap;
+      .member {
+        background-color: #fff;
+        margin: 3em;
+        margin-bottom: 5em;
+        width: 25%;
+        padding: 2em;
+        line-height: 2em;
+        position: relative;
+        h3 {
+          color: rgb(255, 197, 91);
+          font-size: 2rem;
+          margin-top: 5.5em;
+          word-break: break-word;
+        }
+        .rank {
+          color: rgb(0, 0, 0);
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          margin: 1em 0;
+        }
+        p {
+          color: rgb(0, 0, 0);
+        }
+        .profilephoto {
+          width: 18em;
+          height: 18em;
+          border-radius: 50%;
+          position: absolute;
+          top: -6em;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgb(255, 255, 255);
+          img {
+            width: 16em;
+            height: 16em;
+            margin-top: 1em;
+          }
+        }
+      }
+    }
+  }
 }
 
 .gallery {
-    text-align: center;
-    background-color: white;
-    h1 {
-        padding: 1%;
-        font-size: 5rem;
-        font-family: "Prompt", sans-serif;
-    }
-    .container {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 10rem 30rem;
-        grid-gap: 1rem;
-        grid-auto-flow: dense;
-        .gallery-item {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            .gallery-image {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: 50% 50%;
-                    cursor: pointer;
-                    transition: 0.5s ease-in-out;
-                }
-            }
+  text-align: center;
+  background-color: white;
+  h1 {
+    padding: 1%;
+    font-size: 5rem;
+    font-family: "Prompt", sans-serif;
+  }
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 10rem 30rem;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+    .gallery-item {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .gallery-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 50%;
+          cursor: pointer;
+          transition: 0.5s ease-in-out;
         }
-        .gallery-item:hover .gallery-image img {
-            transform: scale(1.5);
-        }
+      }
     }
-    .c-1 {
-        grid-column: span 1;
+    .gallery-item:hover .gallery-image img {
+      transform: scale(1.5);
     }
-    .c-2 {
-        grid-column: span 2;
-    }
-    .c-3 {
-        grid-column: span 3;
-    }
-    .c-4 {
-        grid-column: span 4;
-    }
-    .r-1 {
-        grid-row: span 1;
-    }
-    .r-2 {
-        grid-row: span 2;
-    }
-    .r-3 {
-        grid-row: span 3;
-    }
-    .r-4 {
-        grid-row: span 4;
-    }
+  }
+  .c-1 {
+    grid-column: span 1;
+  }
+  .c-2 {
+    grid-column: span 2;
+  }
+  .c-3 {
+    grid-column: span 3;
+  }
+  .c-4 {
+    grid-column: span 4;
+  }
+  .r-1 {
+    grid-row: span 1;
+  }
+  .r-2 {
+    grid-row: span 2;
+  }
+  .r-3 {
+    grid-row: span 3;
+  }
+  .r-4 {
+    grid-row: span 4;
+  }
 }
 
 @media only screen and (max-device-width: 600px) {
-    .gallery {
-        .container {
-            grid-template-columns: repeat(3, 1fr);
-        }
+  .gallery {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
     }
+  }
 }
 
 .discord {
-    height: 100vh;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: #6073bb;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+    height: 100%;
     max-width: 100vw;
-    background-color: #6073bb;
-    .wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 3.4rem;
-        padding-bottom: 3.4rem;
-        height: 100%;
-        max-width: 100vw;
-        background-color: inherit;
-        iframe {
-            margin: 5rem;
-            text-align: center;
-            border-radius: 3%;
-        }
-        .bodytext {
-            margin: 5rem;
-            width: 40%;
-            h1 {
-                margin: auto;
-                color: rgb(255, 255, 255);
-                font-family: "Prompt", sans-serif;
-                font-weight: 200;
-                font-size: 3rem;
-                text-align: left;
-                text-transform: uppercase;
-                text-shadow: 5px 3px 5px #696969;
-            }
-            p {
-                margin-top: 2.5rem;
-                margin-bottom: -0.5rem;
-                color: rgb(255, 255, 255);
-                font-family: "Prompt", sans-serif;
-                font-weight: 200;
-                font-size: 1.3rem;
-                text-align: justify;
-                text-justify: inter-word;
-            }
-        }
+    background-color: inherit;
+    iframe {
+      margin: 5rem;
+      text-align: center;
+      border-radius: 3%;
     }
+    .bodytext {
+      margin: 5rem;
+      width: 40%;
+      h1 {
+        margin: auto;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: left;
+        text-transform: uppercase;
+        text-shadow: 5px 3px 5px #696969;
+      }
+      p {
+        margin-top: 2.5rem;
+        margin-bottom: -0.5rem;
+        color: rgb(255, 255, 255);
+        font-family: "Prompt", sans-serif;
+        font-weight: 200;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+  }
 }

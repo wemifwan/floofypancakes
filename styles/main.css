@@ -69,14 +69,15 @@ html {
   background-size: cover;
 }
 
-/*@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
   }
+
   .mobile-view {
     flex-direction: column;
   }
-}*/
+}
 .color {
   color: rgb(255, 228, 26);
 }
