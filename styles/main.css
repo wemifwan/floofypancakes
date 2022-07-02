@@ -6,9 +6,7 @@
 body,
 html {
   font-size: 16px;
-  height: -moz-available;
-  height: fill-available;
-  height: -webkit-fill-available;
+  height: 100%;
   margin: 0px;
   scroll-behavior: smooth;
 }
@@ -96,10 +94,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  min-height: -moz-available;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
+  height: 100%;
 }
 .home .welcome h1 {
   margin-bottom: 15rem;
@@ -108,6 +103,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 5px 3px 5px #696969;
+  padding: 16.5%;
 }
 .home .welcome h1 .light {
   color: white;
@@ -355,11 +351,8 @@ html {
   }
 }
 .discord {
-  min-height: 100vh;
-  min-height: -moz-available;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
-  max-width: 100vw;
+  height: 100%;
+  max-width: 100%;
   background-color: #6073bb;
 }
 .discord .wrapper {

@@ -6,8 +6,7 @@
 body,
 html {
   font-size: 16px;
-  height: fill-available;
-  height: -webkit-fill-available;
+  height: 100%;
   margin: 0px;
   scroll-behavior: smooth;
 }
@@ -94,9 +93,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    min-height: fill-available;
-    min-height: -webkit-fill-available;
+    height: 100%;
     h1 {
       margin-bottom: 15rem;
       font-family: "Prompt", sans-serif;
@@ -104,6 +101,7 @@ html {
       text-align: center;
       text-transform: uppercase;
       text-shadow: 5px 3px 5px #696969;
+      padding: 16.5%;
       .light {
         color: white;
         font-weight: 200;
@@ -356,10 +354,8 @@ html {
 }
 
 .discord {
-  min-height: 100vh;
-  min-height: fill-available;
-  min-height: -webkit-fill-available;
-  max-width: 100vw;
+  height: 100%;
+  max-width: 100%;
   background-color: #6073bb;
   .wrapper {
     display: flex;
