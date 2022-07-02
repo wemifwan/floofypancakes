@@ -9,6 +9,7 @@ html {
   height: 100%;
   margin: 0px;
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 .scrollToTopBtn {
